@@ -26,15 +26,8 @@ public class Inventory<T> {
     }
   }
 
-  public boolean isEmpty() {
-    if (inventory.size() == 0)
-      return true;
-
-    int totalItem = 0;
-    for (var temp: inventory.values())
-      totalItem += temp;
-
-    return totalItem == 0;
+  public void clear(){
+    inventory.clear();
   }
 
   @Override
